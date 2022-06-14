@@ -28,6 +28,42 @@ paths:
       required: true
       schema:
         type: integer
+    - name: asylumOffice
+        in: query
+        description: Asylum Office
+        required: false
+        schema:
+          type: string
+    - name: citizenship
+        in: query
+        description: Citizenship
+        required: false
+        schema:
+          type: string
+    - name: raceOrEthnicity
+        in: query
+        description: Race Or Ethnicity
+        required: false
+        schema:
+          type: string
+    - name: caseOutcome
+        in: query
+        description: Case Outcome
+        required: false
+        schema:
+          type: string
+    - name: completion
+        in: query
+        description: Completion
+        required: false
+        schema:
+          type: string
+    - name: currentDate
+        in: query
+        description: Current Date
+        required: false
+        schema:
+          type: string
     responses:
         "200":
           description: successful operation
