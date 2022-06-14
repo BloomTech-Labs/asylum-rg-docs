@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  title: HRF Asylum Case API
+  description: HRF Asylum API docs
+  version: 0.0.11
+  
+paths: 
+  /cases:
+   get:
+    summary: gets all cases
+    responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  "$ref": "#/components/schemas/Case"
+  
+  /cases/{caseId}:
+   get:
+    summary: gets a case
+    parameters:
+    - name: caseId
+      in: path
+      description: Case Id
+      required: true
+      schema:
+        type: integer
+    responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  "$ref": "#/components/schemas/Case"
+        "400":
+          description: case was not found         
+          
+components:
+  schemas:
+    Case:
+      type: object
+      properties:
+        caseId:
+          type: integer
+        asylumOffice:
+          type: string
+        citizenship:
+          type: string
+        raceOrEthnicity:
+          type: string
+        caseOutcome:
+          type: string
+        completion:
+          type: string
+        currentDate:
+          type: string
+  
