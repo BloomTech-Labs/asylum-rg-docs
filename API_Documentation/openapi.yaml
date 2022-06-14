@@ -7,7 +7,7 @@ info:
 paths: 
   /cases:
    get:
-    summary: gets all cases
+    summary: Gets all cases
     parameters:
     - name: asylumOffice
         in: query
@@ -45,6 +45,18 @@ paths:
         required: false
         schema:
           type: string
+    - name: calendarDate
+      in: query
+      description: calendar year
+      required: false
+      schema:
+        type: string
+    - name: fiscalDate
+      in: query
+      description: fiscal year
+      required: false
+      schema:
+        type: string
     responses:
         "200":
           description: successful operation
@@ -54,6 +66,8 @@ paths:
                 type: object
                 items:
                   "$ref": "#/components/schemas/Case"
+        "400":
+          description: No cases found for given parameters
   
   /cases/{caseId}:
    get:
@@ -75,7 +89,7 @@ paths:
                 items:
                   "$ref": "#/components/schemas/Case"
         "400":
-          description: case was not found         
+          description: Case was not found
           
 components:
   schemas:
