@@ -45,18 +45,6 @@ paths:
         required: false
         schema:
           type: string
-    - name: calendarDate
-      in: query
-      description: calendar year
-      required: false
-      schema:
-        type: string
-    - name: fiscalDate
-      in: query
-      description: fiscal year
-      required: false
-      schema:
-        type: string
     responses:
         "200":
           description: successful operation
