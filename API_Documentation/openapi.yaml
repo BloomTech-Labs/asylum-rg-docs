@@ -1,0 +1,101 @@
+openapi: 3.0.0
+info:
+  title: HRF Asylum Case API
+  description: HRF Asylum API docs
+  version: 0.0.11
+  
+paths: 
+  /cases:
+   get:
+    summary: Gets all cases
+    parameters:
+    - name: asylumOffice
+        in: query
+        description: Asylum Office
+        required: false
+        schema:
+          type: string
+    - name: citizenship
+        in: query
+        description: Citizenship
+        required: false
+        schema:
+          type: string
+    - name: raceOrEthnicity
+        in: query
+        description: Race Or Ethnicity
+        required: false
+        schema:
+          type: string
+    - name: caseOutcome
+        in: query
+        description: Case Outcome
+        required: false
+        schema:
+          type: string
+    - name: completion
+        in: query
+        description: Completion
+        required: false
+        schema:
+          type: string
+    - name: currentDate
+        in: query
+        description: Current Date
+        required: false
+        schema:
+          type: string
+    responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  "$ref": "#/components/schemas/Case"
+        "400":
+          description: No cases found for given parameters
+  
+  /cases/{caseId}:
+   get:
+    summary: gets a case
+    parameters:
+    - name: caseId
+      in: path
+      description: Case Id
+      required: true
+      schema:
+        type: integer
+    responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  "$ref": "#/components/schemas/Case"
+        "400":
+          description: Case was not found
+          
+components:
+  schemas:
+    Case:
+      type: object
+      properties:
+        caseId:
+          type: integer
+        asylumOffice:
+          type: string
+        citizenship:
+          type: string
+        raceOrEthnicity:
+          type: string
+        caseOutcome:
+          type: string
+        completion:
+          type: string
+        currentDate:
+          type: string
+  
