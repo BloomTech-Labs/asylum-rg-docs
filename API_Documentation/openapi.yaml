@@ -33,12 +33,20 @@ paths:
         required: false
         schema:
           type: string
-    - name: completion
+    - name: completionFrom
         in: query
-        description: Completion
+        description: Start date for the Completion search criteria
         required: false
         schema:
           type: string
+
+    - name: completionTo
+        in: query
+        description: End date for the Completion search criteria
+        required: false
+        schema:
+          type: string
+
     - name: currentDate
         in: query
         description: Current Date
