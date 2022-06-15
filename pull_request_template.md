@@ -1,21 +1,16 @@
 ## Description
 
-___Add your PR description here, deleting this example___
+Added Figma and PDF for Wireframe.
 
 #### Video Link
 
-[Loom Video](Add your loom video link here)
+[Loom Video] https://www.loom.com/share/246522acdc8243b28ae129ad7ddd756f
 
-#### Trello Link
+#### Jira Link
 
-___Paste your trello card link here, deleting this example___
-
-(Example below):
-
-<blockquote class="trello-card"><a href="https:&#x2F;&#x2F;trello.com&#x2F;c&#x2F;JfipwNkb&#x2F;265-fix-refactor-sidebar-to-have-icons-representing-each-element-in-the-sidebar">Fix: Refactor sidebar to have icons representing each element in the sidebar</a></blockquote>
+https://bloomtechlabs.atlassian.net/browse/BL-57
 
 ## Checklist:
-
-- [ ] My design/diagram follows the style guidelines of this project
-- [ ] My docs are organized within an appropriate folder structure in our repo
-- [ ] Pull request description clearly describes docs made & motivations for said additions
+- [X] My design/diagram follows the style guidelines of this project
+- [X] My docs are organized within an appropriate folder structure in our repo
+- [X] Pull request description clearly describes docs made & motivations for said additions
