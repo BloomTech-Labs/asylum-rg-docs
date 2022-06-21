@@ -33,9 +33,15 @@ paths:
         required: false
         schema:
           type: string
-    - name: completion
+    - name: completionFrom
         in: query
-        description: Completion
+        description: Start date for the Completion search criteria
+        required: false
+        schema:
+          type: string
+    - name: completionTo
+        in: query
+        description: End date for the Completion search criteria
         required: false
         schema:
           type: string
@@ -45,6 +51,13 @@ paths:
         required: false
         schema:
           type: string
+    - name: isFiscalYear
+        in: query
+        description: Fiscal Year
+        default : false
+        required: false
+        schema:
+          type: boolean
     responses:
         "200":
           description: successful operation
@@ -56,28 +69,6 @@ paths:
                   "$ref": "#/components/schemas/Case"
         "400":
           description: No cases found for given parameters
-  
-  /cases/{caseId}:
-   get:
-    summary: gets a case
-    parameters:
-    - name: caseId
-      in: path
-      description: Case Id
-      required: true
-      schema:
-        type: integer
-    responses:
-        "200":
-          description: successful operation
-          content:
-            application/json:
-              schema:
-                type: object
-                items:
-                  "$ref": "#/components/schemas/Case"
-        "400":
-          description: Case was not found
           
 components:
   schemas:
