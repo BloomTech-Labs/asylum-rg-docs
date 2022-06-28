@@ -4,7 +4,7 @@ Added loom video, jira, figma, and pdf links for BL-76
 
 #### Video Link
 
-[loom video] (https://www.loom.com/share/7bd4c0b04e7440c0bd3aed9a2664ceaf)
+[loom video] (https://www.loom.com/share/093b479d2c9a4f3a823c09aa007b912b)
 
 #### Jira Link
 
@@ -17,7 +17,7 @@ https://www.figma.com/file/zrTsnUUki4RsARx5GqFHBR/Viewing-Case-Data?node-id=0%3A
 #### pdf Link
 
 [html img tag link] <img src="./viewing-case-data.pdf">
-[OneDrive link] https://1drv.ms/b/s!Ave7mpxi1nlfgcIyEAxl-9ZvfyTEBg
+[OneDrive link] https://1drv.ms/f/s!AqqdAXGBc1JNgzVvMp5sXH-jtHqR
 
 ## Checklist:
 - [X] My design/diagram follows the style guidelines of this project
