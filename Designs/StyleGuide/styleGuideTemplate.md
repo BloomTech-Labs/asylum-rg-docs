@@ -12,10 +12,6 @@ BL-549 UX: Update Figma project with brand style guide
 
 #### Trello Link
 
-___Paste your trello card link here, deleting this example___
-
-(Example below):
-
 <blockquote class="trello-card"><a href="https://bloomtechlabs.atlassian.net/jira/software/c/projects/BL/boards/8?modal=detail&selectedIssue=BL-549">Update: Added style guide to Figma project file</a></blockquote>
 
 ## Checklist:
