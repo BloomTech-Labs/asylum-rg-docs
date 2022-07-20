@@ -2,59 +2,53 @@ openapi: 3.0.0
 info:
   title: HRF Asylum Case API
   description: HRF Asylum API docs
-  version: 0.0.11
+  version: 0.0.12
   
 paths: 
   /cases:
    get:
-    summary: Gets all cases
+    summary: Gets case data   # Filtering is optional based on query string parameters
     parameters:
     - name: asylumOffice
         in: query
         description: Asylum Office
         required: false
         schema:
-          type: string
+          type: array   # Array as a query parameter is sent as a comma-delimited list ( e.g. /cases?asylumOffice=zny,zmi,zsf )
     - name: citizenship
         in: query
-        description: Citizenship
+        description: Citizenship   # This is the origin nation of the asylum petitioner
         required: false
         schema:
-          type: string
-    - name: raceOrEthnicity
-        in: query
-        description: Race Or Ethnicity
-        required: false
-        schema:
-          type: string
+          type: array   # Array as a query parameter is sent as a "0"-delimited list ( e.g. /cases?citizenship=ANGOLA0BELGIUM0FRANCE )    
     - name: caseOutcome
         in: query
-        description: Case Outcome
+        description: Case Outcome   # Three possible outcomes: 'Deny/Referral', 'Grant', or 'Admin Close/Dismissal'
         required: false
         schema:
           type: string
     - name: completionFrom
         in: query
-        description: Start date for the Completion search criteria
+        description: Start date for the Completion search criteria   # The start of the date range for when the asylum petition was decided
         required: false
         schema:
           type: string
     - name: completionTo
         in: query
-        description: End date for the Completion search criteria
+        description: End date for the Completion search criteria   # The end of the date range for when the asylum petition was decided
         required: false
         schema:
           type: string
     - name: currentDate
         in: query
-        description: Current Date
+        description: Current Date   # The date at which information regarding this particular case was deemed "current" (i.e. - when it was added to the data)
         required: false
         schema:
           type: string
     - name: isFiscalYear
         in: query
-        description: Fiscal Year
-        default : false
+        description: Fiscal Year   # Boolean setting for which date format to use, calendar year versus fiscal year
+        default: false
         required: false
         schema:
           type: boolean
@@ -74,15 +68,11 @@ components:
   schemas:
     Case:
       type: object
-      properties:
-        caseId:
-          type: integer
+      properties:        
         asylumOffice:
           type: string
         citizenship:
-          type: string
-        raceOrEthnicity:
-          type: string
+          type: string        
         caseOutcome:
           type: string
         completion:
