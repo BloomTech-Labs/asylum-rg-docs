@@ -6,7 +6,7 @@ Update product doc repository to include searching case data
 
 [Loom Video](Add your loom video link here)
 
-#### Trello Link
+#### Jira Link
 
 ___Paste your trello card link here, deleting this example___
 
