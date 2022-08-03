@@ -18,9 +18,9 @@ https://drive.google.com/file/d/1cmc4KlLggmTAWzJttq7lWpqJqHW_mwaq/view?usp=shari
 
 https://www.figma.com/file/QbtsElzcyp4XrUCA92W0Im/Untitled?node-id=0%3A1
 
-#### Trello Link
+#### Jira Link
 
-<blockquote class="trello-card"><a href="https://bloomtechlabs.atlassian.net/jira/software/c/projects/BL/boards/8?modal=detail&selectedIssue=BL-75">Iterate design artifacts to include search and filter functionality</a></blockquote>
+<blockquote class="jira-card"><a href="https://bloomtechlabs.atlassian.net/jira/software/c/projects/BL/boards/8?modal=detail&selectedIssue=BL-75">Iterate design artifacts to include search and filter functionality</a></blockquote>
 
 ## Checklist:
 
