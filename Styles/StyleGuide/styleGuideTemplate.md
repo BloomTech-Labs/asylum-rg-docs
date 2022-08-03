@@ -10,9 +10,9 @@ BL-549 UX: Update Figma project with brand style guide
 
 [Loom Video](https://www.loom.com/share/1b4e6ab85fb040afbef2f3990f1aa29c)
 
-#### Trello Link
+#### Jira Link
 
-<blockquote class="trello-card"><a href="https://bloomtechlabs.atlassian.net/jira/software/c/projects/BL/boards/8?modal=detail&selectedIssue=BL-549">Update: Added style guide to Figma project file</a></blockquote>
+<blockquote class="jira-card"><a href="https://bloomtechlabs.atlassian.net/jira/software/c/projects/BL/boards/8?modal=detail&selectedIssue=BL-549">Update: Added style guide to Figma project file</a></blockquote>
 
 ## Checklist:
 

@@ -8,7 +8,7 @@ BL-408 Design visualization components for case outcomes
 
 #### Jira Link
 
-<blockquote class="trello-card"><a href="https://bloomtechlabs.atlassian.net/jira/software/c/projects/BL/boards/8?modal=detail&selectedIssue=BL-408">Updated layout to fit style guide recommendations</a></blockquote>
+<blockquote class="jira-card"><a href="https://bloomtechlabs.atlassian.net/jira/software/c/projects/BL/boards/8?modal=detail&selectedIssue=BL-408">Updated layout to fit style guide recommendations</a></blockquote>
 
 #### Figma Link
 
